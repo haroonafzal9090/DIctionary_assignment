@@ -1,0 +1,57 @@
+class1={"name":"AI"
+       }
+class2={"name":"CNC"
+       }
+students = {
+"student_101" : {"name" : "Haroon", "class_ai" : class1,
+                 "marks_ai" : {"quiz_1" : 90, "quiz_2" : 95, "mid" : 80, "final" : 85},
+            "class_cnc" : class2,
+                 "marks_cnc":{"quiz_1" : 40, "quiz_2" : 45, "mid" : 50, "final" : 55}},
+"student_102" : {"name" : "Moosa","class_ai" : class1, "marks_ai" : {"quiz_1" : 90,"quiz_2" : 95,"mid" : 80,"final" : 85},
+            "class_cnc" : class2,
+                 "marks_cnc":{"quiz_1" : 41,"quiz_2" : 46,"mid" : 51,"final" : 56}},
+"student_103" : {"name" : "Yahya", "class_ai" : class1, "marks_ai":{"quiz_1" : 42, "quiz_2" : 48, "mid" : 53,"final" : 58},
+             "class_cnc" : class2,
+                 "marks_cnc":{"quiz_1" : 42, "quiz_2" : 48, "mid" : 53,"final" : 58}},
+"student_104" : {"name" : "Azan", "class_ai" : class1,"marks_ai":{"quiz_1" : 42, "quiz_2" : 48, "mid" : 53,
+            "final" : 58}, 
+            "class_cnc" : class2, "marks_cnc":{"quiz_1" : 43, "quiz_2" : 49, "mid" : 54,
+            "final" : 59}},
+"student_105" : {"name" : "Ammad", "class_ai" : class1,"marks_ai":{"quiz_1" : 42, "quiz_2" : 48, "mid" : 53,
+            "final" : 58}, 
+            "class_cnc" : class2, "marks_cnc":{"quiz_1" : 44, "quiz_2" : 50, "mid" : 55,
+            "final" : 60}},
+"student_106" : {"name" : "Ayan", "class_ai" : class1,"marks_ai":{"quiz_1" : 42, "quiz_2" : 48, "mid" : 53,
+            "final" : 58}, 
+            "class_cnc" : class2, "marks_cnc":{"quiz_1" : 45, "quiz_2" : 51, "mid" : 56,
+            "final" : 61}},
+"student_107" : {"name" : "Rohaan", "class_ai" : class1,"marks_ai":{"quiz_1" : 42, "quiz_2" : 48, "mid" : 53,
+            "final" : 58}, 
+            "class_cnc" : class2, "marks_cnc":{"quiz_1" : 46, "quiz_2" : 52, "mid" : 57,
+            "final" : 62}},
+"student_108" : {"name" : "Mubashir", "class_ai" : class1,"marks_ai":{"quiz_1" : 42, "quiz_2" : 48, "mid" : 53,
+            "final" : 58}, 
+            "class_cnc" : class2, "marks_cnc":{"quiz_1" : 47, "quiz_2" : 53, "mid" : 58,
+            "final" : 63}},
+"student_109" : {"name" : "Ali", "class_ai" : class1,"marks_ai":{"quiz_1" : 42, "quiz_2" : 48, "mid" : 53,
+            "final" : 58}, 
+            "class_cnc" : class2, "marks_cnc":{"quiz_1" : 48, "quiz_2" : 54, "mid" : 59,
+            "final" : 64}},
+"student_1010" : {"name" : "Shahzaib", "class_AI" : class1,"marks_ai":{"quiz_1" : 42, "quiz_2" : 48, "mid" : 53,
+            "final" : 58},
+            "class_cnc" : class2, "marks_cnc":{"quiz_1" : 49, "quiz_2" : 55, "mid" : 60,
+            "final" : 65}}
+}
+std_id = input ("Enter Student ID: ")
+std_id = "student_" + std_id
+std_class = input ("Enter Student Class : (AI / CNC): ")
+std_class_1 = "marks_" + stud_class
+std_class_2 = "class_" + stud_class
+std_exam = input ("Enter Student Exam : (quiz_1/quiz_2/mid/final? ) = ")
+print (students[std_id]["name"] , "get",students[std_id][std_class_1][std_exam],
+"marks in class:", std_class , std_exam , "exam.")
+
+Enter Student ID: 103
+Enter Student Class : (AI / CNC): ai
+Enter Student Exam : (quiz_1/quiz_2/mid/final? ) = final
+Yahya get 58 marks in class: ai final exam.
